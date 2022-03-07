@@ -1,0 +1,7 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: git-ocm-playground
+spec:
+  pathname: 'https://github.com/TomerFi/ocm-playground'
+  type: git

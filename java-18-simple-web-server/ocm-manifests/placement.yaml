@@ -1,0 +1,6 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: java-18-sws-placement-rule
+spec:
+  clusterReplicas: 2
