@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-18-sws
+spec:
+  containers:
+  - name: java-18-sws
+    image: quay.io/tomerfi/java-18-simple-web-server:dev
+    ports:
+    - containerPort: 8000
+    env:
+    - name: TXT_TST
+      value: "Hello testing 1"
+
