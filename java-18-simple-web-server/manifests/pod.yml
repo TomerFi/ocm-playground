@@ -11,5 +11,5 @@ spec:
     - containerPort: 8000
     env:
     - name: TXT_TST
-      value: "Hello testing 1"
+      value: "Hello testing 2"
 
