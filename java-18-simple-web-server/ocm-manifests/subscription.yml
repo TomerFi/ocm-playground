@@ -10,5 +10,5 @@ spec:
   channel: java-18-sws-chan-ns/git-ocm-playground
   placement:
     placementRef:
-      kind: PlacementRule
+      kind: Placement
       name: java-18-sws-placement-rule
