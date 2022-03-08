@@ -8,6 +8,7 @@ spec:
   containers:
   - name: java-18-sws-container
     image: quay.io/tomerfi/java-18-simple-web-server:dev
+    imagePullPolicy: Always
     volumeMounts:
       - mountPath: /app
         name: empty-storage
