@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: java-18-sws-app-ns
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: java-18-sws-chan-ns

@@ -8,6 +8,9 @@ spec:
   containers:
   - name: java-18-sws-container
     image: quay.io/tomerfi/java-18-simple-web-server:dev
+    volumeMounts:
+      - mountPath: /app
+        name: empty-storage
     ports:
     - containerPort: 8000
     env:
@@ -20,4 +23,6 @@ spec:
       limits:
         memory: "128Mi"
         cpu: "500m"
-
+  volumes:
+    - name: empty-storage
+      emptyDir: {}

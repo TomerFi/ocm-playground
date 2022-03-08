@@ -2,6 +2,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
   name: git-ocm-playground
+  namespace: java-18-sws-chan-ns
 spec:
   pathname: 'https://github.com/TomerFi/ocm-playground'
   type: git

@@ -5,8 +5,9 @@ metadata:
     apps.open-cluster-management.io/github-branch: main
     apps.open-cluster-management.io/github-path: java-18-simple-web-server/manifests
   name: java-18-sws-subscription
+  namespace: java-18-sws-app-ns
 spec:
-  channel: git-ocm-playground
+  channel: java-18-sws-chan-ns/git-ocm-playground
   placement:
     placementRef:
       kind: PlacementRule
