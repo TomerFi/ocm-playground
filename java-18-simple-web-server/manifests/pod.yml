@@ -16,7 +16,7 @@ spec:
     - containerPort: 8000
     env:
     - name: TXT_TST
-      value: "Hello testing 4"
+      value: "Hello testing 5"
     resources:
       requests:
         memory: "64Mi"
