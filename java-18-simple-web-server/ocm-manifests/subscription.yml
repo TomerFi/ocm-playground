@@ -11,4 +11,4 @@ spec:
   placement:
     placementRef:
       kind: Placement
-      name: java-18-sws-placement-rule
+      name: java-18-sws-placement
