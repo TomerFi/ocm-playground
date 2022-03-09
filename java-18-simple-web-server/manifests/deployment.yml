@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-18-sws-deployment
+  labels:
+    app: java-18-sws
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: java-18-sws
+  template:
+    metadata:
+      labels:
+        app: java-18-sws
+    spec:
+      containers:
+      - name: java-18-sws-container
+        image: quay.io/tomerfi/java-18-simple-web-server:dev
+        imagePullPolicy: Always
+        volumeMounts:
+          - mountPath: /app
+            name: empty-storage
+        ports:
+        - containerPort: 8000
+        env:
+        - name: TXT_TST
+          value: "Hello testing 6"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+      volumes:
+        - name: empty-storage
+          emptyDir: {}

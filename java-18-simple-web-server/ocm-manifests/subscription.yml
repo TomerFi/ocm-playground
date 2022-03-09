@@ -4,6 +4,7 @@ metadata:
   annotations:
     apps.open-cluster-management.io/github-branch: main
     apps.open-cluster-management.io/github-path: java-18-simple-web-server/manifests
+    apps.open-cluster-management.io/git-clone-depth: "1"
     apps.open-cluster-management.io/reconcile-option: merge
     apps.open-cluster-management.io/reconcile-rate: high
   name: java-18-sws-subscription
