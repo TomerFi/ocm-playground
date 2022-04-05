@@ -9,5 +9,4 @@ spec:
   ports:
     - protocol: TCP
       port: 4321
-      name: customstuff
       targetPort: 8000
