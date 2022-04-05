@@ -11,3 +11,4 @@ spec:
       app: java-18-sws-subscription
   endpoints:
   - port: web
+  - port: metrics
