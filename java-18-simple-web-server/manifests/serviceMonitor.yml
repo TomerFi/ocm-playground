@@ -10,5 +10,4 @@ spec:
     matchLabels:
       app: java-18-sws-subscription
   endpoints:
-  - port: web
-  - port: metrics
+  - port: custom_stuff
