@@ -1,0 +1,13 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: java-18-sws-service-monitor
+  labels:
+    app: java-18-sws-subscription
+spec:
+  selector:
+    matchLabels:
+      app: java-18-sws-subscription
+  endpoints:
+  - port: web
