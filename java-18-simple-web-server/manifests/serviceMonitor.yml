@@ -10,4 +10,4 @@ spec:
     matchLabels:
       app: java-18-sws-subscription
   endpoints:
-  - port: custom_stuff
+  - port: customstuff
