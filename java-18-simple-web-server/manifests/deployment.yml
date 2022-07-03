@@ -6,7 +6,7 @@ metadata:
   labels:
     app: java-18-sws
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: java-18-sws
